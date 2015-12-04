@@ -30,10 +30,10 @@ module Todo
 
       return if connection.table_exists?(:tasks)
 
-      connection.crate_table :tasks do |t|
-        t.colum :name,    :string, null: false
-        t.colum :content, :text,   null: false
-        t.colum :status,  :integer,default: 0, null: false
+      connection.create_table :tasks do |t|
+        t.column :name,    :string, null: false
+        t.column :content, :text,   null: false
+        t.column :status,  :integer,default: 0, null: false
         t.timestamps
       end
       connection.add_index :tasks, :status

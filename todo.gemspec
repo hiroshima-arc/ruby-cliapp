@@ -6,12 +6,12 @@ require 'todo/version'
 Gem::Specification.new do |spec|
   spec.name          = "todo"
   spec.version       = Todo::VERSION
-  spec.authors       = ["k2works"]
-  spec.email         = ["kakimomokuri@gmail.com"]
+  spec.authors       = ["hiroshima-arc"]
+  spec.email         = ["hiroshima-arc@gmail.com"]
 
   spec.summary       = %q{Todo management tool create by Perfect Ruby Team.}
   spec.description   = %q{Todo management tool}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "http://hiroshima-arc.github.io/"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
