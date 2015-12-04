@@ -48,9 +48,9 @@ module Todo
           opt.on_tail('-h','--help','Show this message') {|v| help_sub_command(opt) }
         end
 
-        sub_command_parsers['search'] = OptionParser.new do |opt|
+        sub_command_parsers['list'] = OptionParser.new do |opt|
           opt.banner = 'Usage: list <args>'
-          opt.on('-s VAL', '--status=VAL', 'search status') {|v| options[:name] = v }
+          opt.on('-s VAL', '--status=VAL', 'list status') {|v| options[:status] = v }
           opt.on_tail('-h','--help','Show this message') {|v| help_sub_command(opt) }
         end
 
