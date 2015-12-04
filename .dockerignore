@@ -78,8 +78,8 @@ Vagrantfile
 ### Git
 .git/
 .gitignore
-.dockerignore
 
 ### Docker
-Dockerfile
+#Dockerfile
+.dockerignore
 
