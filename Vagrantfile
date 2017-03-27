@@ -13,7 +13,7 @@ SCRIPT
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", inline: script
   config.vm.hostname = "hiroshima-arc-ruby-cliapp"
-  config.vm.box = "hiroshima-arc/ruby-study-env"
+  config.vm.box = "hiroshima-arc/manhattan"
   config.vm.network "forwarded_port", guest: 3000, host: 1234
   config.vm.synced_folder ".", "/vagrant", disabled: false
 
